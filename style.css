@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: url(weather.jpg);
+  background-size: cover;
+}
+
+header {
+  background: linear-gradient(135deg, rgb(51, 50, 48) 10.5%, rgb(0, 0, 0) 86.8%);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 20px 10px;
+  color: #ffffff; 
+  padding: 5px;
+  text-align: center;
+  font-family: 'Alkatra', serif;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.heading {
+  margin: 0;
+  font-size: 36px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(gradient-bg.png);
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 800px;
+  height: auto;
+  border-radius: 3px;
+  padding: 1rem;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.container1 {
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  color: #ffffff;
+}
+
+p {
+  margin: 0;
+  font-size: large;
+  color: #ffffff;
+  font-family: 'sans-serif';
+}
+
+input[type="text"] {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'sans-serif';
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 2%;
+  font-family: 'sans-serif';
+  background-color: #239ed2;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #da4f84;
+}
+
+.container #result {
+  margin-top: 2rem;
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 2px 2px 4px #bbb3b3;
+  font-size: large;
+  line-height: 2rem;
+  padding: 2rem;
+  width: 500px;
+}
+
+.forecast-container {
+  margin-top: 2rem;
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 2px 2px 4px #bbb3b3;
+  font-size: large;
+  line-height: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.favorites-container {
+  margin-top: 2rem;
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 2px 2px 4px #bbb3b3;
+  font-size: large;
+  line-height: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust width to center the cards on the page */
+}
+
+.forecast-day {
+  flex: 0 1 180px; /* Adjust the width of each card */
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content is spaced evenly */
+}
+
+.forecast-day img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+/* Additional styling for mobile devices */
+@media only screen and (max-width: 767px) {
+  .forecast-container {
+      width: 100%;
+  }
+  .forecast-day {
+      flex: 1 1 100%; /* Ensure each card takes full width on mobile */
+      margin-bottom: 20px;
+  }
+}
+
+/* Additional styling for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .forecast-container {
+      width: 100%;
+  }
+  .forecast-day {
+      flex: 0 1 45%; /* Adjust width for tablet view */
+  }
+}
+
+.footer {
+  font-size: large;
+  font-family: 'Alkatra', sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
