@@ -1,5 +1,5 @@
 This is WEB CSE  level-1 project
-link:- file:///C:/Users/Dakshta%20Wadibhasme/Project%20WEB%20CSE/Weather.html
+link:-(http://127.0.0.1:5500/Weather.html)
 2. Weather Dashboard 
 Problem Statement
 Users need a quick and easy way to check the weather forecast for multiple cities. Create a weather
